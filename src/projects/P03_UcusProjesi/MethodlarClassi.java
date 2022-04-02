@@ -20,6 +20,9 @@ public class MethodlarClassi {
             if (yon==1)odenecekUcret=Yolcu.dSehriFiyat/2;
             else if (yon==2)odenecekUcret= (Yolcu.dSehriFiyat/2)*0.8;
             break;
+         default:
+            System.out.println("Lutfen gecerli bir rota giriniz!");
+            break;
       }
   return odenecekUcret; }
 
@@ -38,6 +41,9 @@ public static double yuzdeOnIndirim(String rota,int yon){
          if (yon==1)odenecekUcret=Yolcu.dSehriFiyat*0.9;
          else if (yon==2)odenecekUcret= (Yolcu.dSehriFiyat*0.9)*0.8;
          break;
+      default:
+         System.out.println("Lutfen gecerli bir rota giriniz!");
+         break;
    }
    return odenecekUcret;
 }
@@ -55,6 +61,9 @@ public static double yuzdeOnIndirim(String rota,int yon){
          case "D":
             if (yon==1)odenecekUcret=Yolcu.dSehriFiyat*0.7;
             else if (yon==2)odenecekUcret= (Yolcu.dSehriFiyat*0.7)*0.8;
+            break;
+         default:
+            System.out.println("Lutfen gecerli bir rota giriniz!");
             break;
       }
       return odenecekUcret;
@@ -90,6 +99,9 @@ public static double yuzdeOnIndirim(String rota,int yon){
          case "D":
             if (yon == 1) odenecekUcret = Yolcu.dSehriFiyat;
             else if (yon == 2) odenecekUcret = (Yolcu.dSehriFiyat) * 0.8;
+            break;
+         default:
+            System.out.println("Lutfen gecerli bir rota giriniz!");
             break;
       }
 
