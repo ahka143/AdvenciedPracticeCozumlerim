@@ -106,7 +106,7 @@ public class MethodlarClass {
             secimYap();
         }else{
             System.out.println("Sifreniz hatali.");
-            secimYap();
+            girisEkraninaGit();
         }
 
     }
