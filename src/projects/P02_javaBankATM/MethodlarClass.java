@@ -33,6 +33,9 @@ public class MethodlarClass {
             case 6:
                 cikis();
                 break;
+             default:
+                 System.out.println("Gecersiz bir secim yaptiniz. Lutfen tekrar deneyiniz.");
+                 secimYap();
 
         }
     }
