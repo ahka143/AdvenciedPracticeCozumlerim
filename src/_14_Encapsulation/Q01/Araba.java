@@ -1,7 +1,37 @@
 package _14_Encapsulation.Q01;
 
 public class Araba {
+    public String getModel() {
+        return model;
+    }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getRenk() {
+        return renk;
+    }
+
+    public void setRenk(String renk) {
+        this.renk = renk;
+    }
+
+    public int getMotor() {
+        return motor;
+    }
+
+    public void setMotor(int motor) {
+        this.motor = motor;
+    }
+
+    public int getYil() {
+        return yil;
+    }
+
+    public void setYil(int yil) {
+        this.yil = yil;
+    }
 
     private String model;
     private String renk;
@@ -17,5 +47,15 @@ public class Araba {
 
     public Araba() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "Araba{" +
+                "model='" + model + '\'' +
+                ", renk='" + renk + '\'' +
+                ", motor=" + motor +
+                ", yil=" + yil +
+                '}';
     }
 }
