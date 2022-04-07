@@ -1,75 +1,46 @@
-package projects.P06_KahveMakinesi.Kahve_mqkinesi01;
+package P06_KahveMakinesi.Kahve_mqkinesi01;
+
+import java.util.Scanner;
 
 public class Kahve {
-    private String kahveNo;
-    private String kahveAdi;
-    private String kahveBoy;
-    private String sut;
-    private String seker;
+public static Scanner scan = new Scanner(System.in);
+    private static String hangiKahve;
+    private static String sut;
+    private static String seker;
 
-    public Kahve() {
+    public static String getHangiKahve() {
+        return hangiKahve;
     }
 
-    public Kahve(String kahveNo, String kahveAdi) {
-        this.kahveNo = kahveNo;
-        this.kahveAdi = kahveAdi;
+    public static void setHangiKahve(String hangiKahve) {
+        Kahve.hangiKahve = hangiKahve;
     }
 
-    public Kahve(String kahveNo, String kahveAdi, String kahveBoy, String sut, String seker) {
-        this.kahveNo = kahveNo;
-        this.kahveAdi = kahveAdi;
-        this.kahveBoy = kahveBoy;
-        this.sut = sut;
-        this.seker = seker;
-    }
-
-    @Override
-    public String toString() {
-        return "Kahve{" +
-                "kahveNo='" + kahveNo + '\'' +
-                ", kahveAdi='" + kahveAdi + '\'' +
-                ", sut='" + sut + '\'' +
-                ", seker='" + seker + '\'' +
-                '}';
-    }
-
-    public String getKahveNo() {
-        return kahveNo;
-    }
-
-    public void setKahveNo(String kahveNo) {
-        this.kahveNo = kahveNo;
-    }
-
-    public String getKahveAdi() {
-        return kahveAdi;
-    }
-
-    public void setKahveAdi(String kahveAdi) {
-        this.kahveAdi = kahveAdi;
-    }
-
-    public String getSut() {
+    public static String getSut() {
         return sut;
     }
 
-    public void setSut(String sut) {
-        this.sut = sut;
+    public static void setSut(String sut) {
+        Kahve.sut = sut;
     }
 
-    public String getSeker() {
+    public static String getSeker() {
         return seker;
     }
 
-    public void setSeker(String seker) {
-        this.seker = seker;
+    public static void setSeker(String seker) {
+        Kahve.seker = seker;
     }
 
-    public String getKahveBoy() {
-        return kahveBoy;
+    public static String getBoyut() {
+        return boyut;
     }
 
-    public void setKahveBoy(String kahveBoy) {
-        this.kahveBoy = kahveBoy;
+    public static void setBoyut(String boyut) {
+        Kahve.boyut = boyut;
     }
+
+    private static String boyut;
+
+
 }
