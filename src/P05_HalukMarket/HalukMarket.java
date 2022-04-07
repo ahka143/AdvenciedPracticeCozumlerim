@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class HalukMarket {
+import static P05_HalukMarket.Variables.fiyatListesi;
+
+public class HalukMarket extends Methods {
 
 
     public static void main(String[] args) {
@@ -34,7 +36,7 @@ public class HalukMarket {
 		 * 6. Eğer devam etmek istiyorsa yeniden ürün seçme kısmına yönlendiriniz.
 		 * 7. Eğer bitirmek istiyorsa ödemeyi kontrol edip para ustu hesaplayarak  programı bitirinzi.
 		 */
-
+urunSec(urunListesi,fiyatListesi);
 
     }
 }
